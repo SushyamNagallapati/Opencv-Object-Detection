@@ -8,12 +8,10 @@ frame_gray_init = cv2.cvtColor(first_frame, cv2.COLOR_BGR2GRAY)
 
 hsv = np.zeros_like(first_frame)
 
-
 # print(np.shape(first_frame))
 # print(np.shape(hsv))
 # print(first_frame)
 # print(hsv)
-
 
 hsv[...,1] = 255 #the ... is used cause when we run the hsv alone we get 3 sq brackets. In those 3 sq brackets we are selecting the 1st position ie, in the order 0, 1, 2.
 
